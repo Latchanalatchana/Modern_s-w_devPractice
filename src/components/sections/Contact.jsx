@@ -33,29 +33,29 @@ export default function Contact() {
     {
       icon: FaEnvelope,
       label: 'Email',
-      value: 'latchana@example.com',
-      link: 'mailto:latchana@example.com',
+      value: 'latchanalatchana2@gmail.com',
+      link: 'mailto:latchanalatchana2@gmail.com',
       color: 'from-blue-400 to-blue-600',
     },
     {
       icon: FaPhone,
       label: 'Phone',
-      value: '+91 (123) 456-7890',
-      link: 'tel:+911234567890',
+      value: '6369357399',
+      link: 'tel:6369357399',
       color: 'from-purple-400 to-purple-600',
     },
     {
       icon: FaMapMarkerAlt,
-      label: 'Location',
-      value: 'India',
+      label: 'Name',
+      value: 'Latchana',
       link: '#',
       color: 'from-pink-400 to-pink-600',
     },
   ]
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub', color: 'hover:text-gray-400' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:text-blue-500' },
+    { icon: FaGithub, href: 'https://github.com/Latchanalatchana', label: 'GitHub', color: 'hover:text-gray-400' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/%F0%9D%99%BB%F0%9D%9A%8A%F0%9D%9A%9D%F0%9D%9A%8C%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%97%F0%9D%9A%8A-%F0%9D%9A%82-a3b7163b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn', color: 'hover:text-blue-500' },
     { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:text-blue-400' },
   ]
 

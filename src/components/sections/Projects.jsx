@@ -10,15 +10,15 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'AI Healthcare Chatbot',
-      description: 'Intelligent medical chatbot using NLP and TensorFlow with real-time responses and medical knowledge base.',
-      longDescription: 'Built an advanced medical chatbot that understands healthcare queries using transformer models. Features context retention, symptom analysis, and medication information.',
-      tech: ['Python', 'TensorFlow', 'NLP', 'Flask'],
+      title: 'FAER Project (Hackathon)',
+      description: 'Full-stack AI-enabled emergency response system for hackathon.',
+      longDescription: 'Developed for a hackathon, this project integrates AI for emergency detection and response, featuring real-time data processing and alerting.',
+      tech: ['React', 'Node.js', 'Python', 'AI'],
       category: 'AI/ML',
-      github: 'https://github.com',
-      live: 'https://example.com',
-      icon: '🤖',
-      image: 'bg-gradient-to-br from-blue-500 to-purple-600'
+      github: 'https://github.com/Latchanalatchana/Hackathon',
+      live: 'https://github.com/Latchanalatchana/Hackathon',
+      icon: '🚨',
+      image: 'bg-gradient-to-br from-red-500 to-yellow-600'
     },
     {
       id: 2,

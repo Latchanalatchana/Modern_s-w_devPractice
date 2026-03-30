@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react'
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import { ThemeContext } from '../../App'
 import { navItems } from '../../utils/constants'
 
@@ -30,19 +30,16 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navItems.map((item) => (
+              {[{label: 'Home', to: '/'}, {label: 'About', to: '/about'}, {label: 'Projects', to: '/projects'}, {label: 'Contact', to: '/contact'}].map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition cursor-pointer ${
                     isDark
                       ? 'text-gray-300 hover:text-white hover:bg-gray-700'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
                   }`}
+                  onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </Link>
@@ -86,14 +83,10 @@ export default function Navbar() {
         <div className={`md:hidden transition-colors duration-300 ${
           isDark ? 'bg-gray-800' : 'bg-gray-100'
         } px-2 pt-2 pb-3 space-y-1`}>
-          {navItems.map((item) => (
+          {[{label: 'Home', to: '/'}, {label: 'About', to: '/about'}, {label: 'Projects', to: '/projects'}, {label: 'Contact', to: '/contact'}].map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
               onClick={() => setIsOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium transition cursor-pointer ${
                 isDark

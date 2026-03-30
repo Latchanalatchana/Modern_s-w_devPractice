@@ -83,9 +83,9 @@ export default function Hero() {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-16">
           {[
-            { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-            { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-            { icon: FaEnvelope, href: 'mailto:latchana@example.com', label: 'Email' },
+            { icon: FaGithub, href: 'https://github.com/Latchanalatchana', label: 'GitHub' },
+            { icon: FaLinkedin, href: 'https://www.linkedin.com/in/%F0%9D%99%BB%F0%9D%9A%8A%F0%9D%9A%9D%F0%9D%9A%8C%F0%9D%9A%91%F0%9D%9A%8A%F0%9D%9A%97%F0%9D%9A%8A-%F0%9D%9A%82-a3b7163b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn' },
+            { icon: FaEnvelope, href: 'mailto:latchanalatchana2@gmail.com', label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
